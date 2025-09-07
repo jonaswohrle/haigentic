@@ -2,8 +2,22 @@
 
 import { PulsingBorder } from "@paper-design/shaders-react"
 import { motion } from "framer-motion"
+import { useEffect, useState } from "react"
 
 export default function PulsingCircle() {
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768)
+    }
+
+    checkMobile()
+    window.addEventListener("resize", checkMobile)
+
+    return () => window.removeEventListener("resize", checkMobile)
+  }, [])
+
   return (
     <div className="absolute bottom-8 right-4 md:right-8 z-30">
       <div className="relative w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
@@ -25,8 +39,8 @@ export default function PulsingCircle() {
           rotation={0}
           frame={9161408.251009725}
           style={{
-            width: window.innerWidth < 768 ? "48px" : "60px",
-            height: window.innerWidth < 768 ? "48px" : "60px",
+            width: isMobile ? "48px" : "60px",
+            height: isMobile ? "48px" : "60px",
             borderRadius: "50%",
           }}
         />

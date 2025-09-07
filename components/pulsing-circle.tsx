@@ -5,11 +5,11 @@ import { motion } from "framer-motion"
 
 export default function PulsingCircle() {
   return (
-    <div className="absolute bottom-8 right-8 z-30">
-      <div className="relative w-20 h-20 flex items-center justify-center">
+    <div className="absolute bottom-8 right-4 md:right-8 z-30">
+      <div className="relative w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
         {/* Pulsing Border Circle */}
         <PulsingBorder
-          colors={["#BEECFF", "#E77EDC", "#FF4C3E", "#00FF88", "#FFD700", "#FF6B35", "#8A2BE2"]}
+          colors={["#40e0d0", "#20b2aa", "#ff7f50", "#ff6347", "#ffa07a", "#f5f5dc", "#5f9ea0"]}
           colorBack="#00000000"
           speed={1.5}
           roundness={1}
@@ -25,8 +25,8 @@ export default function PulsingCircle() {
           rotation={0}
           frame={9161408.251009725}
           style={{
-            width: "60px",
-            height: "60px",
+            width: window.innerWidth < 768 ? "48px" : "60px",
+            height: window.innerWidth < 768 ? "48px" : "60px",
             borderRadius: "50%",
           }}
         />
@@ -48,7 +48,7 @@ export default function PulsingCircle() {
           </defs>
           <text className="text-sm fill-white/80 instrument">
             <textPath href="#circle" startOffset="0%">
-              v0 is amazing • v0 is amazing • v0 is amazing • v0 is amazing •
+              AI thinking • processing • executing • AI thinking • processing • executing •
             </textPath>
           </text>
         </motion.svg>

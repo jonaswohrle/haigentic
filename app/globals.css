@@ -41,6 +41,24 @@
   --font-instrument-serif: "Instrument Serif", serif; /* Instrument Serif font family configuration */
   /* Added Figtree as the primary font variable */
   --font-figtree: "Figtree", sans-serif; /* Figtree font family configuration */
+
+  /* Heading Typography System */
+  --heading-font-family: "Instrument Serif", serif;
+  --heading-font-weight-light: 300;
+  --heading-font-weight-medium: 500;
+  --heading-size-hero: clamp(2.5rem, 8vw, 6rem);
+  --heading-size-section: clamp(2rem, 6vw, 4rem);
+  --heading-line-height: 0.9;
+  --heading-letter-spacing: -0.02em;
+
+  /* Heading Colors */
+  --heading-color-dark: #111111;
+  --heading-color-light: #ffffff;
+  --heading-color-muted: #64748b;
+
+  /* Italic Emphasis Styling */
+  --heading-italic-weight: 500;
+  --heading-italic-style: italic;
 }
 
 .dark {
@@ -138,4 +156,44 @@
 
 .instrument {
   font-family: var(--font-instrument-serif);
+}
+
+/* Heading utility classes */
+.heading-hero {
+  font-family: "Instrument Serif", serif;
+  line-height: 0.9;
+  letter-spacing: -0.02em;
+  font-size: clamp(2.5rem, 8vw, 6rem);
+  font-weight: 300;
+  color: #111111;
+}
+
+.heading-hero-light {
+  font-family: "Instrument Serif", serif;
+  line-height: 0.9;
+  letter-spacing: -0.02em;
+  font-size: clamp(2.5rem, 8vw, 6rem);
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.heading-section {
+  font-family: "Instrument Serif", serif;
+  line-height: 0.9;
+  letter-spacing: -0.02em;
+  font-size: clamp(2rem, 6vw, 4rem);
+  font-weight: 300;
+  color: #111111;
+}
+
+.heading-italic-emphasis {
+  font-weight: 500;
+  font-style: italic;
+  color: #111111;
+}
+
+.heading-italic-emphasis-light {
+  font-weight: 500;
+  font-style: italic;
+  color: #ffffff;
 }

@@ -12,12 +12,12 @@ This document provides comprehensive information about using Aceternity and Orig
 
 ## Project Structure
 
-```
+\`\`\`
 components/
 ├── ui/                 # Base UI components (shared)
 ├── aceternity/         # Aceternity animation components (86 components)
 └── originui/           # OriginUI ready-to-use components (599 components)
-```
+\`\`\`
 
 ## Aceternity Components
 
@@ -127,7 +127,7 @@ Aceternity provides stunning animation and effect components built with React, T
 
 ### Example Usage - Aceternity
 
-```tsx
+\`\`\`tsx
 // Import from the aceternity folder
 import { AnimatedTestimonials } from "@/components/aceternity/animated-testimonials";
 import { BackgroundGradientAnimation } from "@/components/aceternity/background-gradient-animation";
@@ -164,7 +164,7 @@ function HeroSection() {
     </BackgroundGradientAnimation>
   );
 }
-```
+\`\`\`
 
 ## OriginUI Components
 
@@ -182,7 +182,7 @@ OriginUI components are numbered sequentially and cover various UI patterns:
 
 ### Example Usage - OriginUI
 
-```tsx
+\`\`\`tsx
 // Import from the originui folder
 import Comp01 from "@/components/originui/comp-01";
 import Comp02 from "@/components/originui/comp-02";
@@ -198,7 +198,7 @@ function MyPage() {
     </div>
   );
 }
-```
+\`\`\`
 
 ## Usage Guide
 
@@ -207,20 +207,20 @@ function MyPage() {
 When implementing features, follow these patterns:
 
 1. **For animations and effects**: Use Aceternity components
-   ```tsx
+   \`\`\`tsx
    import { ComponentName } from "@/components/aceternity/component-name";
-   ```
+   \`\`\`
 
 2. **For ready-made UI sections**: Use OriginUI components
-   ```tsx
+   \`\`\`tsx
    import CompXX from "@/components/originui/comp-xx";
-   ```
+   \`\`\`
 
 3. **For base UI elements**: Use shared UI components
-   ```tsx
+   \`\`\`tsx
    import { Button } from "@/components/ui/button";
    import { Input } from "@/components/ui/input";
-   ```
+   \`\`\`
 
 ### Component Selection Guide
 
@@ -266,16 +266,16 @@ When implementing features, follow these patterns:
 ## Best Practices
 
 ### 1. Import Optimization
-```tsx
+\`\`\`tsx
 // Good - Direct imports
 import { AnimatedModal } from "@/components/aceternity/animated-modal";
 
 // Avoid - Don't import from index files that don't exist
 // import { AnimatedModal } from "@/components/aceternity";
-```
+\`\`\`
 
 ### 2. Component Composition
-```tsx
+\`\`\`tsx
 // Combine components for complex UIs
 function HeroSection() {
   return (
@@ -288,7 +288,7 @@ function HeroSection() {
     </div>
   );
 }
-```
+\`\`\`
 
 ### 3. Styling Consistency
 - Both libraries use Tailwind CSS
@@ -300,7 +300,7 @@ function HeroSection() {
 - Use React.memo for components with complex animations
 - Consider viewport-based loading for background effects
 
-```tsx
+\`\`\`tsx
 // Example: Lazy loading
 const BackgroundBeams = lazy(() => 
   import("@/components/aceternity/background-beams")
@@ -313,7 +313,7 @@ function App() {
     </Suspense>
   );
 }
-```
+\`\`\`
 
 ### 5. Responsive Design
 - All components are mobile-responsive

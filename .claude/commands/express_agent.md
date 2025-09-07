@@ -25,6 +25,6 @@ STEPS:
    - Get the installation command
 
 7. OUTPUT:
-   ```bash
+   \`\`\`bash
    # Install command
    npx shadcn@latest add [component]

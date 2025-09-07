@@ -20,9 +20,9 @@ STEPS:
    - Get installation for ALL components at once
 
 4. OUTPUT to design-docs/[task-name]/component-research.md:
-   ```markdown
+   \`\`\`markdown
    ## Installation Commands:
-   ```bash
+   \`\`\`bash
    npx shadcn@latest add form input button card alert label
 
    Component: Form

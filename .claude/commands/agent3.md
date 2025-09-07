@@ -19,7 +19,7 @@ STEPS:
    - Verify your implementation follows best practices
 
 4. OUTPUT Complete implementation:
-   ```tsx
+   \`\`\`tsx
    // All necessary imports
    import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form"
    import { Input } from "@/components/ui/input"

@@ -22,7 +22,7 @@ STEPS:
    - Note the exact name
 
 4. OUTPUT to design-docs/[task-name]/requirements.md:
-   ```markdown
+   \`\`\`markdown
    ## Feature: [Name]
    ## Components Required:
    - form (validation and submission)

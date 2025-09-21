@@ -21,8 +21,8 @@ const instrumentSerif = Instrument_Serif({
 })
 
 export const metadata: Metadata = {
-  title: "v0 App",
-  description: "Created with v0",
+  title: "Haigentic",
+  description: "Intelligent AI Workforce - Supercharge your GTM team with AI and increase GTM efficiency",
   generator: "v0.app",
 }
 

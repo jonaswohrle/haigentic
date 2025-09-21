@@ -24,6 +24,9 @@ export const metadata: Metadata = {
   title: "Haigentic",
   description: "Intelligent AI Workforce - Supercharge your GTM team with AI and increase GTM efficiency",
   generator: "v0.app",
+  icons: {
+    icon: "/favicon.ico",
+  },
 }
 
 export default function RootLayout({
